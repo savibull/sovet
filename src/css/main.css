@@ -1,0 +1,15 @@
+@import "foundation-sites/dist/css/foundation.css";
+
+/*
+    User style
+*/
+@import "parts/variables.css";
+@import "parts/header.css";
+
+
+html {
+    font-size: 12px;
+}
+.grid-container.full {
+    min-width: 1200px;
+}

@@ -1,0 +1,52 @@
+.header-top {
+    border-bottom: 1px solid $header_top_border_bottom;
+    * {
+        color: $header_top_color;
+        font-size: 1rem;
+    }
+    a {
+        text-decoration: underline;
+        line-height: 36px;
+    }
+    a:hover {
+        text-decoration: none;
+        color: $header_top_color;
+    }
+
+    .menu {
+        a {
+            padding: 0;
+            margin: 0 0 0 3rem;
+        }
+    }
+
+    &__en {
+
+    }
+    &__en::before {
+        content: '';
+        background-image: url(../img/english-icon.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: 3px;
+        right: 5px;
+    }
+
+    &__account {
+
+    }
+    &__account::after {
+        content: '';
+        background-image: url(../img/burger.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        width: 9px;
+        height: 7px;
+        margin: 0 0 0 8px;
+    }
+}
