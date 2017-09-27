@@ -18,10 +18,11 @@
             padding: 0;
             margin: 0 0 0 3rem;
         }
-    }
-
-    &__en {
-
+        li:first-child {
+            a {
+                margin: 0;
+            }
+        }
     }
     &__en::before {
         content: '';
@@ -35,10 +36,6 @@
         top: 3px;
         right: 5px;
     }
-
-    &__account {
-
-    }
     &__account::after {
         content: '';
         background-image: url(../img/burger.png);
@@ -48,5 +45,25 @@
         width: 9px;
         height: 7px;
         margin: 0 0 0 8px;
+    }
+}
+.header {
+    padding: 25px 0 0 0;
+    background-color: $header_color;
+    background-image: url(../img/header-img.png);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    &__input {
+        position: relative;
+        max-width: 315px;
+    }
+    &__input-wrap {
+        position: relative;
+    }
+    &__border_bottom {
+        height: 20px;
+        margin: 25px 0 0 0;
+        background-image: url(../img/header-border-bottom.png);
+        background-repeat: repeat-x;
     }
 }

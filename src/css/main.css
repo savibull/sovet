@@ -4,6 +4,7 @@
     User style
 */
 @import "parts/variables.css";
+@import "parts/inputs.css";
 @import "parts/header.css";
 
 
