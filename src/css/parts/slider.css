@@ -1,0 +1,128 @@
+.book-slider {
+    position: relative;
+    max-width: 360px;
+    margin: 0 auto;
+    a {
+        color: $slider_book;
+        text-decoration: underline;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    .item {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+    &__item {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+    }
+    &__item:last-child {
+        padding: 0 0 0 13px;
+    }
+    &__item:first-child {
+        min-width: 60px;
+    }
+    &__book {
+        max-height: 96px;
+    }
+    &__caption {
+        font-family: 'Baltika-Bold';
+        font-size: 1.5rem;
+        margin: 0;
+        line-height: 1;
+        width: 100%;
+    }
+    &__title {
+        font-size: 1.17rem;
+        font-weight: bold;
+        line-height: 1.3rem;
+        display: block;
+        margin: -1.4rem 0 0 0;
+    }
+    &__tag-wrap {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    &__tag {
+        position: relative;
+        color: $slider_book_tag;
+        border-top: 1px solid $slider_book_tag;
+        border-bottom: 1px solid $slider_book_tag;
+        border-left: 1px solid $slider_book_tag;
+        margin: 0 15px 0 0;
+        p {
+            margin: 0;
+            padding: 0 4px;
+            line-height: 18px;
+        }
+    }
+    &__tag::after {
+        content: "";
+        background-image: url(../img/tag-arrow.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -1px;
+        right: -7px;
+        display: inline-block;
+        width: 8px;
+        height: 20px;
+    }
+}
+
+.owl-theme .owl-dots {
+    margin: 12px 0 0 0;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background-color: $slider_book;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: transparent;
+    border: 1px solid $slider_book;
+}
+.owl-theme .owl-nav {
+    position: absolute;
+    width: 100%;
+    margin: 15px 0 0 0;
+    .owl-next,
+    .owl-prev {
+        position: absolute;
+        height: 16px;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+    }
+    .owl-prev {
+        left: 0;
+    }
+    .owl-next {
+        right: 0;
+    }
+    .owl-next::after,
+    .owl-prev::before {
+        content: "";
+        background-image: url(../img/slider-book-arrow.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        width: 10px;
+        height: 16px;
+    }
+    .owl-next::after {
+        transform: rotate(180deg);
+    }
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+}
+.owl-theme .owl-nav::after,
+.owl-theme .owl-nav::before {
+    content: "";
+    display: table;
+    clear: both;
+}

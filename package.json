@@ -13,13 +13,18 @@
     "foundation-sites": "^6.4.3",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
     "gulp-image": "^2.7.5",
     "gulp-postcss": "^6.3.0",
+    "gulp-rigger": "^0.5.8",
     "gulp-sourcemaps": "^2.4.1",
     "gulp-watch": "^4.3.11",
+    "jquery": "^3.2.1",
     "normalize.css": "^7.0.0",
+    "owl.carousel": "^2.2.0",
     "postcss-csso": "^1.1.2",
     "postcss-import": "^10.0.0",
+    "postcss-mixins": "^6.1.1",
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^3.0.0"
   }

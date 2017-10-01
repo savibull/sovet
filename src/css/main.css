@@ -1,15 +1,22 @@
 @import "foundation-sites/dist/css/foundation.css";
+@import "owl.carousel/dist/assets/owl.carousel.css";
+@import "owl.carousel/dist/assets/owl.theme.default.css";
 
 /*
     User style
 */
+@import "parts/fonts.css";
 @import "parts/variables.css";
 @import "parts/inputs.css";
 @import "parts/header.css";
+@import "parts/slider.css";
 
 
 html {
     font-size: 12px;
+}
+body {
+    font-family: Arial,sans-serif;
 }
 .grid-container.full {
     min-width: 1200px;
