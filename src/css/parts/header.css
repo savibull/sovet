@@ -63,10 +63,33 @@
     &__input-wrap {
         position: relative;
     }
-    &__border_bottom {
-        height: 20px;
+}
+.border-bottom {
+    height: 20px;
+    background-image: url(../img/header-border-bottom.png);
+    background-repeat: repeat-x;
+    &_header {
         margin: 25px 0 0 0;
-        background-image: url(../img/header-border-bottom.png);
-        background-repeat: repeat-x;
+    }
+}
+.menu-main-wrap {
+    background-image: url(../img/menu-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0;
+    > li {
+        display: inline-block;
+        list-style: none;
+    }
+    > li > a {
+        color: #FFF;
+        font-family: 'Baltika-Bold';
+        font-size: 2rem;
+        line-height: 50px;
     }
 }
