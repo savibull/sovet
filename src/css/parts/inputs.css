@@ -3,10 +3,14 @@
     padding: 0 0 0 25px;
     &_header {
         border: 1px solid $input_header;
+        color: $input_placeholder;
     }
     &_header:hover,
     &_header:focus {
         border: 1px solid $input_header;
+    }
+    &_header::placeholder {
+        color: $input_placeholder;
     }
 }
 .submit-btn {
