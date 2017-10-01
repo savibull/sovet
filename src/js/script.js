@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
+    $('.book-slider').owlCarousel({
 		loop:true,
 		smartSpeed: 1000,
 		nav:true,
@@ -7,6 +7,16 @@ $(document).ready(function() {
 		dotsEach:true,
 		navText:false,
 		items: 1,
-		autoplay: false,
+		autoplay: true,
+	});
+    $('.index-slider').owlCarousel({
+		loop:true,
+		smartSpeed: 1000,
+		nav:true,
+		dots:false,
+		dotsEach:true,
+		navText:false,
+		items: 1,
+		autoplay: true,
 	});
 });
