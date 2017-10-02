@@ -12,6 +12,7 @@
 @import "parts/slider.css";
 @import "parts/block.css";
 @import "parts/media.css";
+@import "parts/footer.css";
 
 
 html {
@@ -29,4 +30,7 @@ body {
 }
 .main-container_block {
     margin-top: 65px;
+}
+.pos-rel {
+    position: relative;
 }
