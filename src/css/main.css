@@ -10,6 +10,7 @@
 @import "parts/inputs.css";
 @import "parts/header.css";
 @import "parts/slider.css";
+@import "parts/block.css";
 
 
 html {
@@ -20,4 +21,11 @@ body {
 }
 .grid-container.full {
     min-width: 1200px;
+}
+.main-container {
+    width: 90%;
+    margin: 0 auto;
+}
+.main-container_block {
+    margin-top: 65px;
 }

@@ -1,0 +1,83 @@
+.block {
+    padding: 9px;
+    border: 1px solid $block_border;
+    &__second {
+        border: 1px solid $block_border;
+    }
+    &__header {
+        font-family: 'Baltika-Bold';
+        font-size: 3rem;
+        p {
+            margin: 30px 0 35px 0;
+            line-height: 1;
+        }
+        p::before {
+            content: '';
+            background-image: url(../img/block-header.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            width: 21px;
+            height: 21px;
+            margin: 0 8px 0 0;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        padding: 0 0 20px 0;
+        margin: 25px 10px 0 10px;
+        border-bottom: 1px solid $block_item_border;
+    }
+    &__item:first-child {
+        margin: 0 10px 0 10px;
+    }
+    &__item:last-child {
+        border-bottom: 0;
+    }
+    &__img {
+        max-width: 50%;
+        min-width: 30%;
+        margin: 0 10px 0 0;
+    }
+    &__time {
+        margin: 0 0 1rem 0;
+        line-height: 1;
+    }
+    &__text {
+        margin: 0;
+    }
+    &__title {
+        display: inline-block;
+        text-transform: uppercase;
+        color: $titile_color;
+        text-decoration: underline;
+        font-size: 1rem;
+        margin: 0 0 1rem 0;
+    }
+    &__title:hover {
+        color: $titile_color;
+        text-decoration: none;
+    }
+    &__footer {
+        margin: 20px 0;
+        a {
+            color: $titile_color;
+            text-decoration: underline;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+.block_congresses,
+.block_meeting {
+    .block__item {
+        flex-flow: row wrap;
+    }
+    .block__img {
+        min-width: 100%;
+        margin: 0 0 25px 0;
+    }
+}

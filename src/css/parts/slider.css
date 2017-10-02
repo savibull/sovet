@@ -169,3 +169,62 @@
 .index-slider .owl-nav [class*=owl-]:hover {
     background: rgba(0, 0, 0, .7);
 }
+.block_congresses .owl-nav,
+.block_meeting .owl-nav {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    bottom: -30px;
+    z-index: 1;
+    .owl-next,
+    .owl-prev {
+        position: absolute;
+        width: 10px;
+        height: 17px;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+    }
+    .owl-prev {
+        left: 40px;
+    }
+    .owl-next {
+        right: 40px;
+    }
+    .owl-next::after,
+    .owl-prev::before {
+        content: "";
+        background-image: url(../img/block-slider.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        position: relative;
+        width: 10px;
+        height: 17px;
+    }
+    .owl-next::after {
+        transform: rotate(180deg);
+        left: 2px;
+    }
+}
+.block_congresses .owl-nav [class*=owl-]:hover,
+.block_meeting .owl-nav [class*=owl-]:hover {
+    background: transparent;
+}
+.block_congresses .owl-dots,
+.block_meeting .owl-dots {
+    position: absolute;
+    width: 100%;
+    bottom: -53px;
+}
+.block_congresses .owl-dots .owl-dot span,
+.block_meeting .owl-dots .owl-dot span {
+    background-color: $block_slider_dots;
+}
+.block_congresses .owl-dots .owl-dot.active span,
+.block_congresses .owl-dots .owl-dot:hover span,
+.block_meeting .owl-dots .owl-dot.active span,
+.block_meeting .owl-dots .owl-dot:hover span {
+    background-color: $block_slider_dots_hover;
+    border: 1px solid $titile_color;
+}
