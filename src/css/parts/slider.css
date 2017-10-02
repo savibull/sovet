@@ -169,6 +169,7 @@
 .index-slider .owl-nav [class*=owl-]:hover {
     background: rgba(0, 0, 0, .7);
 }
+.media__body .owl-nav,
 .block_congresses .owl-nav,
 .block_meeting .owl-nav {
     position: absolute;
@@ -207,20 +208,33 @@
         left: 2px;
     }
 }
+.media__body .owl-nav {
+    .owl-prev {
+        left: 20%;
+    }
+    .owl-next {
+        right: 20%;
+    }
+}
+.media__body .owl-nav [class*=owl-]:hover,
 .block_congresses .owl-nav [class*=owl-]:hover,
 .block_meeting .owl-nav [class*=owl-]:hover {
     background: transparent;
 }
+.media__body .owl-dots,
 .block_congresses .owl-dots,
 .block_meeting .owl-dots {
     position: absolute;
     width: 100%;
     bottom: -53px;
 }
+.media__body .owl-dots .owl-dot span,
 .block_congresses .owl-dots .owl-dot span,
 .block_meeting .owl-dots .owl-dot span {
     background-color: $block_slider_dots;
 }
+.media__body .owl-dots .owl-dot.active span,
+.media__body .owl-dots .owl-dot:hover span,
 .block_congresses .owl-dots .owl-dot.active span,
 .block_congresses .owl-dots .owl-dot:hover span,
 .block_meeting .owl-dots .owl-dot.active span,

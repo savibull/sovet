@@ -27,7 +27,7 @@ $(document).ready(function() {
 		dotsEach:true,
 		navText:false,
 		items: 1,
-		autoplay: false,
+		autoplay: true,
 	});
     $('.block_congresses').owlCarousel({
 		loop:true,
@@ -37,6 +37,16 @@ $(document).ready(function() {
 		dotsEach:true,
 		navText:false,
 		items: 1,
-		autoplay: false,
+		autoplay: true,
+	});
+    $('.media__body').owlCarousel({
+		loop:true,
+		smartSpeed: 1000,
+		nav:true,
+		dots:true,
+		dotsEach:true,
+		navText:false,
+		items: 1,
+		autoplay: true,
 	});
 });
