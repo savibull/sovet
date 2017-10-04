@@ -1,6 +1,9 @@
 .block {
     padding: 9px;
     border: 1px solid $block_border;
+    &_slider {
+        margin: 0 0 80px 0;
+    }
     &__second {
         border: 1px solid $block_border;
     }
@@ -21,6 +24,47 @@
             height: 21px;
             margin: 0 8px 0 0;
         }
+    }
+    &_news {
+        margin: 0 0 30px 0;
+    }
+    &__news {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        .block__img {
+            width: 325px;
+            margin: 0;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .block__info {
+            padding: 15px 15px 15px 30px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-around;
+        }
+        .block__info-wrap {
+            width: 100%;
+        }
+        .block__info-wrap:first-child {
+            margin: 0 0 35px 0;
+        }
+    }
+    &__btn {
+        display: inline-block;
+        padding: 0 25px;
+        color: #000;
+        border: 1px solid #000;
+        line-height: 35px;
+        transition: .2s;
+    }
+    &__btn:hover {
+        color: #FFF;
+        background-color: #000;
     }
     &__item {
         display: flex;
@@ -80,4 +124,19 @@
         min-width: 100%;
         margin: 0 0 25px 0;
     }
+}
+.block-left {
+    padding: 35px 0;
+    border-bottom: 1px solid $block_left;
+    &__title {
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+}
+.block-left:last-child {
+    border-bottom: 1px solid transparent;
+}
+.block-left-border {
+    padding: 0 1.875rem 0 0;
+    border-right: 1px solid $block_left;
 }

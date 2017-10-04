@@ -31,18 +31,16 @@
         bottom: 0;
         width: 100%;
         background-color: rgba(0,0,0,.5);
-        a {
+        p {
             color: #FFF;
             text-decoration: underline;
             font-size: 1.45rem;
             line-height: 1.3;
-        }
-        a:hover {
-            text-decoration: none;
+            margin: 0;
         }
     }
     &__info_photo {
-        a::before {
+        p::before {
             content: '';
             background-image: url(../img/media-photo-icon.png);
             background-repeat: no-repeat;
@@ -56,7 +54,7 @@
         }
     }
     &__info_video {
-        a::before {
+        p::before {
             content: '';
             background-image: url(../img/media-video-icon.png);
             background-repeat: no-repeat;

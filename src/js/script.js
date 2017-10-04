@@ -49,4 +49,14 @@ $(document).ready(function() {
 		items: 1,
 		autoplay: true,
 	});
+
+    $('.menu-main > li').hover(function () {
+        if ( $(this).children('ul').length != 0 ) {
+            $('.menu-main').addClass('menu-main_border');
+        }
+    }, function () {
+        if ( $(this).children('ul').length != 0 ) {
+            $('.menu-main').removeClass('menu-main_border');
+        }
+    });
 });

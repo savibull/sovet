@@ -1,0 +1,17 @@
+.breadcrumbs {
+    margin: 3rem 0 0 0;
+    a {
+        color: $breadcrumbs_link;
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+    li {
+        color: $breadcrumbs_cur;
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+    li:not(:last-child)::after {
+        content: '-';
+        color: $breadcrumbs_link;
+    }
+}

@@ -12,6 +12,16 @@
     &_header::placeholder {
         color: $input_placeholder;
     }
+    &_block-left {
+        border: 1px solid $input_block-left;
+    }
+    &_block-left:hover,
+    &_block-left:focus {
+        border: 1px solid $input_block-left;
+    }
+    &_block-left::placeholder {
+        color: $block_left_placeholder;
+    }
 }
 .submit-btn {
     position: absolute;
