@@ -14,6 +14,7 @@ import image from 'gulp-image';
 import watch from 'gulp-watch';
 import browsersync from 'browser-sync';
 import concat from 'gulp-concat';
+import rigger from 'gulp-rigger';
 
 const path = {
 
@@ -55,6 +56,7 @@ const serverConfig = {
 
 gulp.task('build:html', () => {
    gulp.src(path.src.html)
+      .pipe(rigger())
       .pipe( gulp.dest(path.build.html) )
       .pipe( browsersync.reload({
          stream: true
